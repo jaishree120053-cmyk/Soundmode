@@ -1,11 +1,23 @@
 <resources>
     <string name="app_name">Soundmode</string>
     <string name="app_title">Location-Based Sound Mode Automation</string>
-    <string name="app_subtitle">Automatically switch ring, vibrate, silent, or do not disturb when you enter saved places.</string>
     <string name="saved_locations">Saved locations</string>
-    <string name="map_placeholder_title">Map visualization</string>
-    <string name="map_placeholder_body">Saved places and geofences appear here.</string>
-    <string name="add_location">Add location</string>
     <string name="start_service">Start monitoring</string>
-    <string name="sample_locations">Home • Vibrate\nCollege • Ring\nOffice • Do Not Disturb</string>
+    <string name="stop_service">Stop monitoring</string>
+    <string name="location_hint">Tap a spot on the map or use the center to save a location profile.</string>
+    <string name="location_name_hint">Location name</string>
+    <string name="location_radius_hint">Radius in meters (e.g. 150)</string>
+    <string name="save_location">Save location at map center</string>
+    <string name="request_permissions">Grant location permissions</string>
+    <string name="request_dnd">Grant Do Not Disturb access</string>
+    <string name="dnd_already_granted">Do Not Disturb access already granted.</string>
+    <string name="map_content_description">Map showing saved locations</string>
+    <string name="sound_mode_ring">Ring</string>
+    <string name="sound_mode_vibrate">Vibrate</string>
+    <string name="sound_mode_silent">Silent</string>
+    <string name="sound_mode_dnd">Do Not Disturb</string>
+    <string name="permission_required">Location permission is required to monitor locations.</string>
+    <string name="service_running">Monitoring is running.</string>
+    <string name="service_stopped">Monitoring is stopped.</string>
+    <string name="remove_location">Remove</string>
 </resources>

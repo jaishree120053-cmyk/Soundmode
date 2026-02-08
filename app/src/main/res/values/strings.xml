@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Soundmode</string>
+    <string name="app_title">Location-Based Sound Mode Automation</string>
+    <string name="app_subtitle">Automatically switch ring, vibrate, silent, or do not disturb when you enter saved places.</string>
+    <string name="saved_locations">Saved locations</string>
+    <string name="map_placeholder_title">Map visualization</string>
+    <string name="map_placeholder_body">Saved places and geofences appear here.</string>
+    <string name="add_location">Add location</string>
+    <string name="start_service">Start monitoring</string>
+    <string name="sample_locations">Home • Vibrate\nCollege • Ring\nOffice • Do Not Disturb</string>
+</resources>

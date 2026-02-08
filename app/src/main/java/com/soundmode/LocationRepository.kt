@@ -1,12 +1,17 @@
 package com.soundmode
 
-class LocationRepository {
+import kotlinx.coroutines.flow.Flow
 
-    fun getProfiles(): List<LocationProfile> {
-        return listOf(
-            LocationProfile("Home", 37.4219983, -122.084, 150f, SoundMode.VIBRATE),
-            LocationProfile("College", 37.430, -122.173, 200f, SoundMode.RING),
-            LocationProfile("Office", 37.331, -122.030, 120f, SoundMode.DO_NOT_DISTURB)
-        )
+class LocationRepository(private val dao: LocationProfileDao) {
+    val locations: Flow<List<LocationProfile>> = dao.getAll()
+
+    suspend fun save(profile: LocationProfile) {
+        dao.insert(profile)
     }
+
+    suspend fun delete(profile: LocationProfile) {
+        dao.delete(profile)
+    }
+
+    suspend fun getAllOnce(): List<LocationProfile> = dao.getAllOnce()
 }
